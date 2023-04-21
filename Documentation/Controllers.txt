@@ -1,0 +1,26 @@
+User Controller:
+- Log in
+- Log out
+- Register
+- Delete
+- Fetch
+- Modify
+
+Part Controller:
+- Create 	NPU
+- Delete	NPU
+- Modify	NPU
+- Fetch		NPU
+- Search	NPU
+
+Part Directory Controller:
+- Fetch part info
+- Fetch all parts
+
+Scoring Controller:
+- Rate
+- Statistics
+
+
+
+
