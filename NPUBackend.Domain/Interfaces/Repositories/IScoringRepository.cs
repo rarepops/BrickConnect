@@ -4,11 +4,11 @@ namespace NPUBackend.Domain.Interfaces.Repositories
 {
     public interface IScoringRepository
     {
-        public Score GetScore(int assemblyId);
-        public Score UpdateScore(int assemblyId);
-        public Score CreateScore(int assemblyId);
+        Task<Score> GetScoreAsync(int assemblyId);
+        Task<Score> UpdateScoreAsync(int assemblyId);
+        Task<Score> CreateScoreAsync(int assemblyId);
 
-        public void RateAssembly(Assembly assembly, Score score);
-        public ICollection<Score> GetRating(Assembly assembly);
+        Task RateAssemblyAsync(Assembly assembly, Score score);
+        Task<ICollection<Score>> GetRatingsAsync(Assembly assembly);
     }
 }

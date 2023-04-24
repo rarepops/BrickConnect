@@ -5,17 +5,17 @@ namespace NPUBackend.Infra.Repository
 {
     internal class UserRepository : IUserRepository
     {
-        public int CreateUser(User user)
+        public async Task<int> CreateUserAsync(User user)
         {
             throw new NotImplementedException();
         }
 
-        public string DeleteUser(string userId)
+        public async Task<string> DeleteUserAsync(string userId)
         {
             throw new NotImplementedException();
         }
 
-        public User GetUser(string userId)
+        public async Task<User> GetUserAsync(string userId)
         {
             throw new NotImplementedException();
         }

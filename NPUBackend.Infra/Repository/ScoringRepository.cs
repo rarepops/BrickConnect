@@ -5,27 +5,27 @@ namespace NPUBackend.Infra.Repository
 {
     internal class ScoringRepository : IScoringRepository
     {
-        public Score CreateScore(int assemblyId)
+        public async Task<Score> CreateScoreAsync(int assemblyId)
         {
             throw new NotImplementedException();
         }
 
-        public ICollection<Score> GetRating(Assembly assembly)
+        public async Task<ICollection<Score>> GetRatingsAsync(Assembly assembly)
         {
             throw new NotImplementedException();
         }
 
-        public Score GetScore(int assemblyId)
+        public async Task<Score> GetScoreAsync(int assemblyId)
         {
             throw new NotImplementedException();
         }
 
-        public void RateAssembly(Assembly assembly, Score score)
+        public async Task RateAssemblyAsync(Assembly assembly, Score score)
         {
             throw new NotImplementedException();
         }
 
-        public Score UpdateScore(int assemblyId)
+        public async Task<Score> UpdateScoreAsync(int assemblyId)
         {
             throw new NotImplementedException();
         }

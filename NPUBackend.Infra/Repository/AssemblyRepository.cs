@@ -5,22 +5,22 @@ namespace NPUBackend.Infra.Repository
 {
     internal class AssemblyRepository : IAssemblyRepository
     {
-        public int CreateAssembly(Assembly assembly)
+        public async Task<int> CreateAssemblyAsync(Assembly assembly)
         {
             throw new NotImplementedException();
         }
 
-        public string DeleteAssembly(int assemblyId)
+        public async Task<string> DeleteAssemblyAsync(int assemblyId)
         {
             throw new NotImplementedException();
         }
 
-        public Assembly GetAssembly(int assemblyId)
+        public async Task<Assembly> GetAssemblyAsync(int assemblyId)
         {
             throw new NotImplementedException();
         }
 
-        public string UpdateAssembly(Assembly assembly)
+        public async Task<string> UpdateAssemblyAsync(Assembly assembly)
         {
             throw new NotImplementedException();
         }

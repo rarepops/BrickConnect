@@ -5,17 +5,17 @@ namespace NPUBackend.Infra.Repository
 {
     internal class PartRepository : IPartRepository
     {
-        public int CreatePart(Part part)
+        public async Task<int> CreatePartAsync(Part part)
         {
             throw new NotImplementedException();
         }
 
-        public ICollection<Assembly> GetAssembliesWhereUsed(Part part)
+        public async Task<ICollection<Assembly>> GetAssembliesWhereUsedAsync(Part part)
         {
             throw new NotImplementedException();
         }
 
-        public Part GetPart(int partId)
+        public async Task<Part> GetPartAsync(int partId)
         {
             throw new NotImplementedException();
         }

@@ -1,11 +1,12 @@
 ﻿using NPUBackend.Domain.Entities;
+using NPUBackend.Infra.DTO;
 
 namespace NPUBackend.Infra.Interfaces.Services
 {
     public interface IAssemblyService
     {
-        public ICollection<Assembly> GetAssemblies();
+        public Task<ICollection<Assembly>> GetAssemblies();
 
-        public Assembly GetAssemblyWithPartDetails();
+        public Task<Assembly> GetAssembliesWithPartDetails(PartDTO part);
     }
 }

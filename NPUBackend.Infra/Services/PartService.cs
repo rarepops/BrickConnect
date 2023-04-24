@@ -2,7 +2,7 @@
 
 namespace NPUBackend.Infra.Services
 {
-    public class AssemblyService 
+    public class PartService
     {
     }
 }

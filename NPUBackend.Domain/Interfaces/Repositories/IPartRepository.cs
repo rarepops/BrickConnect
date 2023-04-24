@@ -4,8 +4,8 @@ namespace NPUBackend.Domain.Interfaces.Repositories
 {
     public interface IPartRepository
     {
-        public int CreatePart(Part part);
-        public Part GetPart(int partId);
-        public ICollection<Assembly> GetAssembliesWhereUsed(Part part);
+        Task<int> CreatePartAsync(Part part);
+        Task<Part> GetPartAsync(int partId);
+        Task<ICollection<Assembly>> GetAssembliesWhereUsedAsync(Part part);
     }
 }

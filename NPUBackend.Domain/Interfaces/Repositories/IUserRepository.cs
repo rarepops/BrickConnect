@@ -4,8 +4,8 @@ namespace NPUBackend.Domain.Interfaces.Repositories
 {
     public interface IUserRepository
     {
-        public User GetUser(string userId);
-        public int CreateUser(User user);
-        public string DeleteUser(string userId);
+        Task<User> GetUserAsync(string userId);
+        Task<int> CreateUserAsync(User user);
+        Task<string> DeleteUserAsync(string userId);
     }
 }
