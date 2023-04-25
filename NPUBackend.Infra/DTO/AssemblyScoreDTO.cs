@@ -2,7 +2,7 @@
 {
     public class AssemblyScoreDTO
     {
-        public int creativity;
-        public int uniqueness;
+        public int Creativity;
+        public int Uniqueness;
     }
 }

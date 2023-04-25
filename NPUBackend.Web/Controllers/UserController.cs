@@ -5,31 +5,48 @@ namespace NPUBackend.Web.Controllers
 {
     public class UserController
     {
-        private readonly IUserService _userService;
+        private readonly IUserService k_UserService;
 
         public UserController(IUserService userService)
         {
-            _userService = userService;
+            k_UserService = userService;
         }
 
         public async Task<string> LogIn(UserDTO user)
         {
-            return "Success";
+            string result = await k_UserService.LogInAsync(user);
+            return result;
         }
 
         public async Task<string> LogOut(UserDTO user)
         {
-            return "Success";
+            string result = await k_UserService.LogOutAsync(user);
+            return result;
         }
 
         public async Task<string> CreateUser(UserDTO user)
         {
-            return "Success";
+            string result = await k_UserService.CreateUserAsync(user);
+            return result;
+        }
+
+        public async Task<UserDTO?> GetUser(int userId)
+        {
+            var result = await k_UserService.GetUserByIdAsync(userId);
+
+            return result;
         }
 
         public async Task<string> DeleteUser(UserDTO user)
         {
-            return "Success";
+            string result = await k_UserService.DeleteUserAsync(user);
+            return result;
+        }
+
+        public async Task<string> ChangePassword(UserDTO user, string newPlaintextPassword)
+        {
+            string result = await k_UserService.ChangePasswordAsync(user, newPlaintextPassword);
+            return result;
         }
     }
 }

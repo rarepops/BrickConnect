@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using NPUBackend.Domain;
 using NPUBackend.Infra;
 
@@ -8,6 +9,8 @@ builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnC
 
 // Register your DbContext and other services here, using the connection string from appsettings.json
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connection = new SqlConnection(connectionString);
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

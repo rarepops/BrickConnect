@@ -12,17 +12,17 @@ namespace NPUBackend.Web.Controllers
             _partService = partService;
         }
 
-        public async Task<string> CreatePart(PartDTO part)
+        public async Task<string> CreatePartAsync(PartDTO part)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<PartDTO> GetPart(int partId)
+        public async Task<PartDTO> GetPartAsync(int partId)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<ICollection<AssemblyDTO>> GetAssembliesWherePartIsUsed(PartDTO part)
+        public async Task<ICollection<AssemblyDTO>> GetAssembliesWherePartIsUsedAsync(PartDTO part)
         {
             throw new NotImplementedException();
         }
