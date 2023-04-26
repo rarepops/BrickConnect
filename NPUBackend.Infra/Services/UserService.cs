@@ -7,14 +7,14 @@ namespace NPUBackend.Infra.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository m_UserRepository;
+        private readonly IUserRepository k_UserRepository;
 
         private readonly string k_Salt = "123123";
         private readonly string k_HashingAlgorithm = "SHA512";
 
         public UserService(IUserRepository userRepository)
         {
-            m_UserRepository = userRepository;
+            k_UserRepository = userRepository;
         }
 
         public async Task<string> LogInAsync(UserDTO user)
@@ -64,7 +64,7 @@ namespace NPUBackend.Infra.Services
                 PasswordPolicy = k_HashingAlgorithm
             };
 
-            string result = await m_UserRepository.CreateUserAsync(user, newPassword);
+            string result = await k_UserRepository.CreateUserAsync(user, newPassword);
             return result;
         }
 
@@ -74,7 +74,7 @@ namespace NPUBackend.Infra.Services
 
             if (authResult == "Success")
             {
-                return await m_UserRepository.DeleteUserAsync(user.Id);
+                return await k_UserRepository.DeleteUserAsync(user.Id);
             }
 
             return authResult;
@@ -93,7 +93,7 @@ namespace NPUBackend.Infra.Services
                     PasswordPolicy = k_HashingAlgorithm
                 };
 
-                var result = await m_UserRepository.ChangeUserPassword(user, newPassword);
+                var result = await k_UserRepository.ChangeUserPasswordAsync(user, newPassword);
 
                 return result;
             }
@@ -103,7 +103,7 @@ namespace NPUBackend.Infra.Services
 
         public async Task<string> AuthenticateUserAsync(UserDTO user)
         {
-            var storedPassword = await m_UserRepository.GetPasswordForUserAsync(user.Id);
+            var storedPassword = await k_UserRepository.GetPasswordForUserAsync(user.Id);
 
             var decryptedStoredPassword = DecryptHashedPassword(storedPassword);
 

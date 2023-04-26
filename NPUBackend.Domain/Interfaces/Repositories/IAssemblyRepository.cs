@@ -8,5 +8,8 @@ namespace NPUBackend.Domain.Interfaces.Repositories
         Task<int> CreateAssemblyAsync(Assembly assembly);
         Task<string> UpdateAssemblyAsync(Assembly assembly);
         Task<string> DeleteAssemblyAsync(int assemblyId);
+
+
+        Task<ICollection<Part>> GetPartsForAssemblyAsync(int assemblyId);
     }
 }

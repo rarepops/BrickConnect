@@ -5,26 +5,53 @@ namespace NPUBackend.Web.Controllers
 {
     public class PartController
     {
-        private readonly IPartService _partService;
+        private readonly IPartService k_PartService;
 
         public PartController(IPartService partService)
         {
-            _partService = partService;
+            k_PartService = partService;
         }
 
-        public async Task<string> CreatePartAsync(PartDTO part)
+        public async Task<PartDTO?> GetPart(int partId)
         {
-            throw new NotImplementedException();
+            var result = await k_PartService.GetPartAsync(partId);
+            return result;
         }
 
-        public async Task<PartDTO> GetPartAsync(int partId)
+        public async Task<string> AddPartToAssembly(PartDTO part, int assemblyId)
         {
-            throw new NotImplementedException();
+            var result = await k_PartService.AddPartToAssemblyAsync(part, assemblyId);
+            return result;
         }
 
-        public async Task<ICollection<AssemblyDTO>> GetAssembliesWherePartIsUsedAsync(PartDTO part)
+        public async Task<string> RemovePartFromAssembly(int partId, int assemblyId)
         {
-            throw new NotImplementedException();
+            var result = await k_PartService.RemovePartFromAssemblyAsync(partId, assemblyId);
+            return result;
+        }
+
+        public async Task<ICollection<int>> FindAssembliesWherePartIsUsed(string partName)
+        {
+            var result = await k_PartService.FindAssemblyIDsWherePartIsUsedAsync(partName);
+            return result;
+        }
+
+        public async Task<string> GetPartColor(int partId)
+        {
+            var result = await k_PartService.GetPartColorAsync(partId);
+            return result;
+        }
+
+        public async Task<string> GetPartCategory(int partId)
+        {
+            var result = await k_PartService.GetPartCategoryAsync(partId);
+            return result;
+        }
+
+        public async Task<ICollection<int>> GetPartIDsForCategory(string category)
+        {
+            var result = await k_PartService.GetPartIDsForCategoryAsync(category);
+            return result;
         }
     }
 }

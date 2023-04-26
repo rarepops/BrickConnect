@@ -20,6 +20,11 @@ namespace NPUBackend.Infra.Repository
             throw new NotImplementedException();
         }
 
+        public Task<ICollection<Part>> GetPartsForAssemblyAsync(int assemblyId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<string> UpdateAssemblyAsync(Assembly assembly)
         {
             throw new NotImplementedException();
