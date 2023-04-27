@@ -5,6 +5,7 @@ namespace NPUBackend.Infra.DTO
     public class UserDTO : User
     {
         public UserDTO() { }
+
         public UserDTO(User user)
         {
             Id = user.Id;

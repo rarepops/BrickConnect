@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-04-26T18:31:53.771Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="HHLVY78EOatiXk1M16Uf" version="21.2.1" type="device">
+<mxfile host="Electron" modified="2023-04-27T20:26:21.785Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="RIxopW9HepfLuN1pkuol" version="21.2.1" type="device">
   <diagram name="Page-1" id="k8v3rHDn6FhqdRON8lOe">
-    <mxGraphModel dx="2680" dy="1573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1206" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-87" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3E8DC;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="170" y="520" width="1150" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="u8VsAXniSvun9k4xM15s-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=none;strokeWidth=1;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+        <mxCell id="u8VsAXniSvun9k4xM15s-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=none;strokeWidth=1;dashed=1;dashPattern=1 1;" parent="1" vertex="1">
           <mxGeometry x="170" y="520" width="1150" height="470" as="geometry" />
         </mxCell>
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-88" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFAE8;strokeColor=none;" parent="1" vertex="1">
@@ -97,8 +97,8 @@
             <mxPoint x="2" y="42" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-73" value="&lt;b&gt;Assembly Controller&lt;br&gt;&lt;/b&gt;&lt;br&gt;Create Assembly&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Assembly&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Update Assembly&lt;br&gt;Delete Assembly&lt;br&gt;&lt;br&gt;Rate Assembly&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Rating for Assembly" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="610" y="330" width="227.5" height="140" as="geometry" />
+        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-73" value="&lt;b&gt;Assembly Controller&lt;br&gt;&lt;/b&gt;&lt;br&gt;Create Assembly&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Assembly&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Update Assembly&lt;br&gt;Delete Assembly&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Parts for Assembly&lt;br&gt;&lt;br&gt;Rate Assembly&lt;br&gt;Get Rating&lt;br&gt;Get RatingId&lt;br&gt;Delete Rating&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Total Rating for Assembly" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="612.5" y="300" width="227.5" height="190" as="geometry" />
         </mxCell>
         <mxCell id="sPXh9yBH8n4TWhQxVx2j-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="pBrJ_K6vvV4SP7ELr4cM-74" target="pBrJ_K6vvV4SP7ELr4cM-81" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -113,7 +113,7 @@
             <mxPoint x="-1" y="25" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-74" value="&lt;b&gt;Part Controller&lt;/b&gt;&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Part&lt;br&gt;Add Part to Assembly&lt;br&gt;Get Parts for Assembly&lt;br&gt;Remove Part from Assembly&lt;br&gt;Find Assemblies Where Part Is Used&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Part Color&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Part Category&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get PartIDs for Category" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-74" value="&lt;b&gt;Part Controller&lt;/b&gt;&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Part&lt;br&gt;Add Part to Assembly&lt;br&gt;Remove Part from Assembly&lt;br&gt;Find Assemblies Where Part Is Used&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Part Color&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get Part Category&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Get PartIDs for Category" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="970" y="310" width="255" height="170" as="geometry" />
         </mxCell>
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pBrJ_K6vvV4SP7ELr4cM-78" target="pBrJ_K6vvV4SP7ELr4cM-140" edge="1">
@@ -149,7 +149,7 @@
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pBrJ_K6vvV4SP7ELr4cM-82" target="pBrJ_K6vvV4SP7ELr4cM-142" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-82" value="&lt;b&gt;Scoring Service&lt;br&gt;&lt;/b&gt;&lt;br&gt;Responsible for computing statistics about Assemblies or NPUs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-82" value="&lt;b&gt;Rating Service&lt;br&gt;&lt;/b&gt;&lt;br&gt;Responsible for computing statistics about Assemblies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="460" y="607.5" width="185" height="90" as="geometry" />
         </mxCell>
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-89" value="&lt;b&gt;User Class&lt;/b&gt;&lt;br&gt;&lt;br&gt;Holds information about users&lt;br&gt;&lt;br&gt;user_id&lt;br&gt;password_id&lt;br&gt;username&lt;br&gt;first_name&lt;br&gt;surname&lt;br&gt;etc." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
@@ -176,7 +176,7 @@
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-109" value="Domain" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="92.5" y="1000" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-114" value="&lt;b&gt;Score Class&lt;/b&gt;&lt;br&gt;&lt;br&gt;Holds information about the scoring&lt;br&gt;&lt;br&gt;score_id&lt;br&gt;user_id&lt;br&gt;assembly_id&lt;br&gt;creativity&lt;br&gt;uniqueness&lt;br&gt;etc." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-114" value="&lt;b&gt;Rating Class&lt;/b&gt;&lt;br&gt;&lt;br&gt;Holds information about the ratings&lt;br&gt;&lt;br&gt;rating_id&lt;br&gt;user_id&lt;br&gt;assembly_id&lt;br&gt;creativity&lt;br&gt;uniqueness&lt;br&gt;etc." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="590" y="1020" width="140" height="190" as="geometry" />
         </mxCell>
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" parent="1" source="pBrJ_K6vvV4SP7ELr4cM-140" target="pBrJ_K6vvV4SP7ELr4cM-30" edge="1">
@@ -226,7 +226,7 @@
         <mxCell id="sPXh9yBH8n4TWhQxVx2j-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;" parent="1" source="pBrJ_K6vvV4SP7ELr4cM-142" target="pBrJ_K6vvV4SP7ELr4cM-114" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-142" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Scoring&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;b&gt;Repository&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+        <mxCell id="pBrJ_K6vvV4SP7ELr4cM-142" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Rating&lt;br&gt;&lt;/b&gt;&lt;b&gt;Repository&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
           <mxGeometry x="492.5" y="865" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="n62XoH6EmWEbMySVKZay-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" source="n62XoH6EmWEbMySVKZay-6" target="pBrJ_K6vvV4SP7ELr4cM-101" edge="1">
@@ -300,7 +300,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="pBrJ_K6vvV4SP7ELr4cM-107" value="Infra" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="87.5" y="850" width="95" height="40" as="geometry" />
+          <mxGeometry x="87.5" y="840" width="95" height="40" as="geometry" />
         </mxCell>
         <mxCell id="O0EQEIfce29Zrep7B2oo-4" value="Application" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="87.5" y="530" width="95" height="40" as="geometry" />

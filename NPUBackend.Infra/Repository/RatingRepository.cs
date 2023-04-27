@@ -3,29 +3,29 @@ using NPUBackend.Domain.Interfaces.Repositories;
 
 namespace NPUBackend.Infra.Repository
 {
-    internal class ScoringRepository : IScoringRepository
+    internal class RatingRepository : IRatingRepository
     {
-        public async Task<Score> CreateScoreAsync(int assemblyId)
+        public Task<string> RateAssemblyAsync(Rating rating)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<ICollection<Score>> GetRatingsAsync(Assembly assembly)
+        public Task<Rating> GetRatingAsync(int assemblyId, int userId)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<Score> GetScoreAsync(int assemblyId)
+        public Task<string> UpdateRatingAsync(Rating rating)
         {
             throw new NotImplementedException();
         }
 
-        public async Task RateAssemblyAsync(Assembly assembly, Score score)
+        public Task<string> DeleteRatingAsync(int ratingId)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<Score> UpdateScoreAsync(int assemblyId)
+        public Task<ICollection<Rating>> GetRatingsForAssembly(int assemblyId)
         {
             throw new NotImplementedException();
         }

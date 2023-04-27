@@ -1,12 +1,12 @@
 ﻿namespace NPUBackend.Domain.Entities
 {
-    public class Score
+    public class Rating
     {
         public int Id { get; set; }
         public int UserId { get; set; }
         public int AssemblyId { get; set; }
 
-        public int UniquenessScore { get; set; }
-        public int CreativityScore { get; set; }
+        public int UniquenessRating { get; set; }
+        public int CreativityRating { get; set; }
     }
 }
